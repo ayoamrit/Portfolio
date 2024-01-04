@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,300;1,400&family=Sevillana&display=swap');
+
+/*Universal Styling*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    user-select: none;
+    transition: 0.3s ease-in;
+}
+/*Styling Body*/
+body{
+    height: 100%;
+    width: 100%;
+}
+/*Styling Other Body Elements*/
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+li{
+    list-style-type: none;
+}
+img{
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+}
+
+/*Styling Classes*/
+.flexRow{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}
+.textLeft{
+    text-align: left;
+}
+.size{
+    height: 100vh;
+    width: 100%;
+}
+.padding150{
+    padding: 10px 150px;
+}
+/*Styling Fonts*/
+.font4{
+    font-size: 4em;
+}
+.font6{
+    font-size: 6em;
+}
+.font10{
+    font-size: 15em;
+}
+.bold{
+    font-weight: bolder;
+}
+.light{
+    font-weight: lighter;
+}
+.colorWhite{
+    color: white;
+}
+
+
+/*Main Section Styling*/
+.main-page{
+    background-image: url(./coverImage/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.coverImage{
+    height: 90vh;
+    box-shadow: 20px 20px 0 0 black;
+}
+.coverImage:hover{
+    box-shadow: none;
+}
+.main-icon a{
+    padding: 0 10px;
+}
+.main-icon a img{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.icon:hover{
+    background-color: rgb(196, 196, 196);
+}
