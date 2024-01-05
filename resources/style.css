@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,300;1,400&family=Sevillana&display=swap');
 
+:root{
+    --gradient: linear-gradient(
+        45deg,
+        #845ec2,
+        #d65db1,
+        #ff6f91,
+        #ff9671,
+        #ffc75f,
+        #f9f871
+    );
+}
 /*Universal Styling*/
 *{
     padding: 0;
@@ -18,6 +29,7 @@ body{
 a{
     text-decoration: none;
     cursor: pointer;
+    color: white;
 }
 li{
     list-style-type: none;
@@ -31,7 +43,7 @@ img{
 /*Styling Classes*/
 .flexRow{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
 }
@@ -46,6 +58,18 @@ img{
     height: 100vh;
     width: 100%;
 }
+.infinite-size{
+    height: 100%;
+    width: 100%;
+}
+.right{
+    text-align: right;
+}
+
+/*Padding*/
+.padding20{
+    padding: 10px 20px;
+}
 .padding150{
     padding: 10px 150px;
 }
@@ -56,7 +80,7 @@ img{
 .font6{
     font-size: 6em;
 }
-.font10{
+.font15{
     font-size: 15em;
 }
 .bold{
@@ -69,30 +93,113 @@ img{
     color: white;
 }
 
+/*Margin Styling*/
+.margin30{
+    margin: 30px 0;
+}
+
 
 /*Main Section Styling*/
 .main-page{
-    background-image: url(./coverImage/background.jpg);
-    background-position: center;
-    background-size: cover;
+    background-color: black;
 }
 .coverImage{
     height: 90vh;
-    box-shadow: 20px 20px 0 0 black;
+    box-shadow: 20px 20px 0 0 white;
 }
 .coverImage:hover{
     box-shadow: none;
 }
-.main-icon a{
-    padding: 0 10px;
+.button{
+    border: 1px solid white;
+    font-size: 1.5em;
+    padding: 10px 20px;
 }
-.main-icon a img{
+.button:hover{
     background-color: white;
-    height: 40px;
-    width: 40px;
-    padding: 5px;
-    border-radius: 10px;
+    color: black;
 }
-.icon:hover{
-    background-color: rgb(196, 196, 196);
+
+/*Styling Slogan Section*/
+.slogan-section{
+    background-color: black;
+    color: white;
+}
+.slogan{
+    font-size: 10em;
+
+}
+.slogan-size{
+    font-size: 1.6em;
+    text-align: left !important;
+}
+.slogan-gradient-text{
+    background-image: var(--gradient);
+    background-clip: text;
+    color: transparent;
+    background-size: 400%;
+    animation: bg-animation 5s infinite alternate;
+}
+
+@keyframes bg-animation{
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
+
+
+/*For media width 1980px*/
+@media screen and (max-width: 1980px){
+    .name{
+        font-size: 10em;
+    }
+}
+
+/*For media width 1700px*/
+@media screen and (max-width: 1700px){
+    .name{
+        font-size: 9em;
+    }
+}
+
+/*For media width 1500px*/
+@media screen and (max-width:1500px){
+    .name{
+        font-size: 7em;
+    }
+}
+
+/*For media width 1024px*/
+@media screen and (max-width: 1024px){
+    .name{
+        font-size: 5em;
+    }
+}
+
+/*For media smaller than 900px*/
+@media screen and (max-width: 900px){
+    .main-page{
+        flex-direction: column;
+        height: 100%;
+        max-width: 100%;
+        box-shadow: none;
+    }
+    .main-text{
+        text-align: center;
+    }
+    .coverImage{
+        box-shadow: none;
+    }
+    .main-image{
+        max-width: 100%;
+        min-width: 350px;
+        margin: 30px 10px;
+    }
+    .coverImage{
+        width: 100%;
+        height: 70vh;
+    }
 }
