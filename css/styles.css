@@ -89,23 +89,51 @@ main img {
     border-radius: 50%;
     margin: 10px 0;
 }
-main p{
+main p, .social-links{
     margin-top: 10px;
+}
+.social-links button{
+    width: 100px;
+    padding: 10px 10px;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--color-alice-blue);
+}
+.social-links button:hover{
+    background-color: var(--color-argentinian-blue);
 }
 
 /* Scroller Animation Styles
 -----------------------------------------------------*/
-.scroller{
-    width: 100%;
-    overflow: hidden;
-    background-color: var(--color-argentinian-blue);
-    color: var(--color-alice-blue);
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
-.inner-scroller{
+.scroller {
     display: flex;
-    font-size: 4.0rem;
-    gap: 1rem;
+    overflow: hidden;
+    margin: 100px 0;
+    background-color: var(--color-argentinian-blue);
+    mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+}
+.inner-scroller {
+    display: flex;
+    white-space: nowrap;
+    font-size: 5rem;
+    color: var(--color-alice-blue);
+    animation: 20s scroll infinite linear;
+}
+.inner-scroller li {
+    margin-right: 1rem;
 }
 .inner-scroller li::after{
     content: "•";
+    color: var(--color-columbia-blue);
 }
+
