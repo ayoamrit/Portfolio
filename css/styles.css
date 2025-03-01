@@ -92,3 +92,20 @@ main img {
 main p{
     margin-top: 10px;
 }
+
+/* Scroller Animation Styles
+-----------------------------------------------------*/
+.scroller{
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--color-argentinian-blue);
+    color: var(--color-alice-blue);
+}
+.inner-scroller{
+    display: flex;
+    font-size: 4.0rem;
+    gap: 1rem;
+}
+.inner-scroller li::after{
+    content: "•";
+}
