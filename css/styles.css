@@ -8,6 +8,7 @@
     --color-argentinian-blue: #77B6EA; 
     --color-columbia-blue: #C7D3DD;
     --color-timberwolf: #D6C9C9;
+    --color-lilgrey: #302f2f;
 }
 
 /* Global Styles
@@ -159,40 +160,42 @@ main p, .social-links{
     margin: 10px 0;
 }
 .category-wrapper {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .category-wrapper button{
-    width: 49%;
+    width: 33%;
     font-size: 1.6rem;
-    padding: 6px 0;
+    padding: 10px 0;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: var(--color-timberwolf);
-    color: var(--color-licorice);
+    background-color: var(--color-lilgrey);
+    color: var(--color-alice-blue);
 }
 .category-wrapper button:hover{
     background-color: var(--color-argentinian-blue);
 }
 .category-wrapper button.active{
-    background-color: var(--color-argentinian-blue);
+    background-color: var(--color-alice-blue);
     color: var(--color-licorice);
 }
 
 .projects-list{
-    width: 80%;
+    width: 100%;
     height: 100%;
-    margin: 20px auto;
 }
 .project-content{
+    width: 80%;
+    margin: 50px auto;
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
     background-color: var(--color-alice-blue);
     color: var(--color-licorice);
     padding: 10px;
 }
 .project-image img{
+    width: 400px;
     height: auto;
-    width: 500px;
+}
+.project-details{
+    margin-left: 20px;
 }
