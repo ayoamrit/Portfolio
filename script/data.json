@@ -1,7 +1,7 @@
 [
     {
         "category": "fullstack",
-        "image": "https://images.unsplash.com/photo-1515405295579-ba7b45403062?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "image": "../assets/images/project-image-1.jpg",
         "title": "SQL Workbase",
         "description": "SQLWorkbase, created in Java Swing, allows user to visualize their SQL Server databases and tables in a table view by utilizing JDBC drivers. By entering their SQL Server username and password, users can access all their databases and tables, which are displayed in a JTree Panel.",
         "techStack": ["Java Swing", "SQL", "JDBC", "Apache POI"],
@@ -9,7 +9,7 @@
     },
     {
         "category": "frontend",
-        "image": "https://images.unsplash.com/photo-1515405295579-ba7b45403062?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "image": "../assets/images/project-image-2.jpg",
         "title": "SQL Workbase",
         "description": "SQLWorkbase, created in Java Swing, allows user to visualize their SQL Server databases and tables in a table view by utilizing JDBC drivers. By entering their SQL Server username and password, users can access all their databases and tables, which are displayed in a JTree Panel.",
         "techStack": ["Java Swing", "SQL", "JDBC", "Apache POI"],
@@ -17,7 +17,7 @@
     },
     {
         "category": "fullstack",
-        "image": "https://images.unsplash.com/photo-1515405295579-ba7b45403062?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "image": "../assets/images/project-image-3.jpg",
         "title": "SQL Workbase",
         "description": "SQLWorkbase, created in Java Swing, allows user to visualize their SQL Server databases and tables in a table view by utilizing JDBC drivers. By entering their SQL Server username and password, users can access all their databases and tables, which are displayed in a JTree Panel.",
         "techStack": ["Java Swing", "SQL", "JDBC", "Apache POI"],
@@ -25,7 +25,7 @@
     },
     {
         "category": "frontend",
-        "image": "https://images.unsplash.com/photo-1515405295579-ba7b45403062?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "image": "../assets/images/project-image-4.jpg",
         "title": "SQL Workbase",
         "description": "SQLWorkbase, created in Java Swing, allows user to visualize their SQL Server databases and tables in a table view by utilizing JDBC drivers. By entering their SQL Server username and password, users can access all their databases and tables, which are displayed in a JTree Panel.",
         "techStack": ["Java Swing", "SQL", "JDBC", "Apache POI"],
