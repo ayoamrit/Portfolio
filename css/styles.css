@@ -43,6 +43,9 @@ h2 {
 h3 {
     font-size: 2.4rem;
 }
+p {
+    font-size: 1.6rem;
+}
 li{
     list-style-type: none;
 }
@@ -59,6 +62,7 @@ header{
     background-color: var(--color-licorice);
     border-bottom: 1px solid var(--color-alice-blue);
     border-radius: 0 0 10px 10px;
+    z-index: 1;
 }
 header ul{
     display: flex;
@@ -82,7 +86,7 @@ main {
     font-size: 1.6rem;
     text-align: center;
     margin: 0 auto;
-    padding-top: 150px;
+    padding-top: 120px;
     color: var(--color-alice-blue);
 }
 main img {
@@ -93,9 +97,9 @@ main p, .social-links{
     margin-top: 10px;
 }
 .social-links button{
-    width: 100px;
-    padding: 10px 10px;
-    font-size: 1.6rem;
+    width: 150px;
+    padding: 20px 10px;
+    font-size: 1.8rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -107,33 +111,88 @@ main p, .social-links{
 
 /* Scroller Animation Styles
 -----------------------------------------------------*/
-@keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-.scroller {
-    display: flex;
+.scroller{
+    margin-top: 50px;
+    width: 100%;
     overflow: hidden;
-    margin: 100px 0;
-    background-color: var(--color-argentinian-blue);
-    mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
 }
-.inner-scroller {
+.scroller_inner{
+    padding-block: 1rem;
     display: flex;
-    white-space: nowrap;
-    font-size: 5rem;
-    color: var(--color-alice-blue);
-    animation: 20s scroll infinite linear;
+    flex-wrap: nowrap;
+    width: max-content;
+    gap: 2rem;
+    animation: scroll 40s linear infinite;
 }
-.inner-scroller li {
-    margin-right: 1rem;
+.svg-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 350px;
+    background: var(--color-alice-blue);
+    border: none;
+    border-radius: 20px;
+    object-fit: cover;
+    cursor: pointer;
 }
-.inner-scroller li::after{
-    content: "•";
-    color: var(--color-columbia-blue);
+@keyframes scroll{
+    to{
+        transform: translate(calc(-50% - 1rem));
+    }
 }
 
+/* Projects Styles
+-----------------------------------------------------*/
+#projects{
+    width: 100%;
+    margin-top: 8rem;
+    color: white;
+}
+.project-header-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+.project-header-wrapper h1 {
+    margin: 10px 0;
+}
+.category-wrapper {
+    margin-top: 30px;
+}
+.category-wrapper button{
+    width: 49%;
+    font-size: 1.6rem;
+    padding: 6px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--color-timberwolf);
+    color: var(--color-licorice);
+}
+.category-wrapper button:hover{
+    background-color: var(--color-argentinian-blue);
+}
+.category-wrapper button.active{
+    background-color: var(--color-argentinian-blue);
+    color: var(--color-licorice);
+}
+
+.projects-list{
+    width: 80%;
+    height: 100%;
+    margin: 20px auto;
+}
+.project-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--color-alice-blue);
+    color: var(--color-licorice);
+    padding: 10px;
+}
+.project-image img{
+    height: auto;
+    width: 500px;
+}
