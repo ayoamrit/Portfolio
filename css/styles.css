@@ -160,6 +160,7 @@ main p, .social-links{
 -----------------------------------------------------*/
 #about{
     width: 100%;
+    padding-top: 50px;
 }
 .about-container{
     width: 80%;
@@ -186,7 +187,7 @@ main p, .social-links{
     color: var(--color-alice-blue);
 }
 .about-container .content p {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     margin-bottom: 10px;
 }
 .about-container .content P:last-of-type, .about-container .content p:first-of-type{
@@ -208,6 +209,7 @@ main p, .social-links{
 -----------------------------------------------------*/
 #projects{
     width: 100%;
+    padding-top: 50px;
 }
 .category-wrapper {
     margin-top: 50px;
