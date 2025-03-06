@@ -55,6 +55,36 @@ a {
     text-decoration: none;
 }
 
+@media screen and (max-width: 800px){
+    h1{
+        font-size: 5rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    h1{
+        font-size: 3.2rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    h3{
+        font-size: 1.7rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+
 /* Header Styles
 -----------------------------------------------------*/
 header{
@@ -79,6 +109,15 @@ header ul li a{
 }
 header ul li a:hover{
     color: #77B6EA;
+}
+
+@media screen and (max-width: 600px){
+    header{
+        font-size: 1.2rem;
+    }
+    header ul li{
+        margin: 10px 10px;
+    }
 }
 
 /* Main Styles
@@ -111,6 +150,14 @@ main p, .social-links{
     background-color: var(--color-argentinian-blue);
 }
 
+@media screen and (max-width: 600px){
+    .social-links button{
+        width: 100px;
+        padding: 10px 10px;
+        font-size: 1.4rem;
+    }
+}
+
 /* Scroller Animation Styles
 -----------------------------------------------------*/
 .scroller{
@@ -141,6 +188,13 @@ main p, .social-links{
 @keyframes scroll{
     to{
         transform: translate(calc(-50% - 1rem));
+    }
+}
+
+@media screen and (max-width: 600px){
+    .svg-container{
+        width: 200px;
+        height: 250px;
     }
 }
 
@@ -194,17 +248,29 @@ main p, .social-links{
 .about-container .content P:last-of-type, .about-container .content p:first-of-type{
     margin-top: 20px;
 }
-.about-container .content p span{
+.about-container .content p span a{
     color: var(--color-argentinian-blue);
 }
 .about-container .content button{
-    padding: 20px 50px;
-    margin-right: 10px;
+    padding: 15px 30px;
+    margin-top: 10px;
     font-size: 1.6rem;
     background-color: var(--color-alice-blue);
     color: var(--color-licorice);
     border: none;
     cursor: pointer;
+}
+
+@media screen and (max-width: 900px){
+    .about-container .content p{
+        font-size: 1.3rem;
+    }
+    .about-container .content button{
+        font-size: 1.4rem;
+    }
+    .about-container .content{
+        padding: 10px;
+    }
 }
 
 
@@ -271,6 +337,7 @@ main p, .social-links{
     color: var(--color-lilgrey);
     font-size: 1.3rem;
     padding: 10px;
+    margin-top: 5px;
     margin-right: 10px;
 }
 .project-details button{
@@ -302,6 +369,24 @@ main p, .social-links{
     .project-details button{
         position: relative;
         margin-top: 20px;
+    }
+    .project-details{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 700px){
+    .category-wrapper button{
+        width: 20%;
+        font-size: 1.2rem;
+    }
+    .tech-stack li{
+        font-size: 1.2rem;
+    }
+    .project-details button{
+        font-size: 1.3rem;
+    }
+    .project-details{
+        margin-left: 0;
     }
 }
 
@@ -341,12 +426,16 @@ main p, .social-links{
     color: var(--color-argentinian-blue);
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1200px){
     .contact-container{
         display: inline-block;
         text-align: center;
     }
     .contact-heading, .contact-details{
         width: 100%;
+    }
+    .contact-links{
+        display: flex;
+        justify-content: center;
     }
 }
