@@ -111,12 +111,28 @@ header ul li a:hover{
     color: #77B6EA;
 }
 
+.show-nav-button{
+    display: none;
+    font-size: 1.6rem;
+    margin: 10px 0;
+    color: var(--color-alice-blue);
+}
 @media screen and (max-width: 600px){
-    header{
-        font-size: 1.2rem;
-    }
     header ul li{
         margin: 10px 10px;
+    }
+    .show-nav-button{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links.active{
+        display: flex;
     }
 }
 
@@ -437,5 +453,15 @@ main p, .social-links{
     .contact-links{
         display: flex;
         justify-content: center;
+    }
+}
+@media screen and (max-width: 800px){
+    .contact-links li a{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 400px){
+    .contact-links li a{
+        font-size: 1rem;
     }
 }

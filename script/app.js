@@ -1,3 +1,24 @@
+/**
+ * Navigation Bar Functions
+ * --------------------------------------------------------------------------------------------------------
+ */
+
+// Select the button that toggles the navigation menu and add a click event listener
+document.getElementById("show-nav-button").addEventListener("click", function() {
+    const navBar = document.querySelector(".nav-links");
+    navBar.classList.toggle("active");
+});
+
+// Select all links inside the navigation menu and add click event listeners
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", function() {
+        const navBar = document.querySelector(".nav-links");
+        navBar.classList.remove("active");
+    });
+});
+
+
+
 /***
  * Scroller Animation Function
  * --------------------------------------------------------------------------------------------------------
@@ -20,6 +41,8 @@ function addAnimation(){
     });
 }
 addAnimation();  // Function call => addAnimation()
+
+
 
 
 /**
@@ -153,6 +176,8 @@ allButton.addEventListener("click", () => categoryChangeHandler("all"));
 allButton.dispatchEvent(new Event("click"));  // Initiate the "click" on the allButton to make it default choice
 frontendButton.addEventListener("click", () => categoryChangeHandler("frontend"));
 fullstackButton.addEventListener("click", () => categoryChangeHandler("fullstack"));
+
+
 
 
 /**
