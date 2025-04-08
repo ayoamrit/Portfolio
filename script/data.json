@@ -4,31 +4,23 @@
         "image": "/Portfolio/assets/images/project-image-1.jpg",
         "title": "SQL Workbase",
         "description": "SQLWorkbase, created in Java Swing, allows user to visualize their SQL Server databases and tables in a table view by utilizing JDBC drivers. By entering their SQL Server username and password, users can access all their databases and tables, which are displayed in a JTree Panel.",
-        "techStack": ["Java Swing", "SQL", "JDBC", "Apache POI"],
-        "link": "https://github.com/ayoamrit/SQLWorkbase"
-    },
-    {
-        "category": "frontend",
-        "image": "/Portfolio/assets/images/project-image-2.jpg",
-        "title": "SQL Workbase",
-        "description": "SQLWorkbase, created in Java Swing, allows user to visualize their SQL Server databases and tables in a table view by utilizing JDBC drivers. By entering their SQL Server username and password, users can access all their databases and tables, which are displayed in a JTree Panel.",
-        "techStack": ["Java Swing", "SQL", "JDBC", "Apache POI"],
+        "techStack": ["Java" ,"Java Swing", "SQL Server", "JDBC", "Apache POI"],
         "link": "https://github.com/ayoamrit/SQLWorkbase"
     },
     {
         "category": "fullstack",
-        "image": "/Portfolio/assets/images/project-image-3.jpg",
-        "title": "SQL Workbase",
-        "description": "SQLWorkbase, created in Java Swing, allows user to visualize their SQL Server databases and tables in a table view by utilizing JDBC drivers. By entering their SQL Server username and password, users can access all their databases and tables, which are displayed in a JTree Panel.",
-        "techStack": ["Java Swing", "SQL", "JDBC", "Apache POI"],
-        "link": "https://github.com/ayoamrit/SQLWorkbase"
+        "image": "/Portfolio/assets/images/project-image-2.jpg",
+        "title": "FindIt",
+        "description": "Full-stack web application hosted on Vercel that allows users to search for accessories included with their TV or product by entering the model number. It also includes a secure admin page where authorized users can add, remove, or update the database content in real time.",
+        "techStack": ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "Firebase Realtime Database", "Vercel (Hosting)" ],
+        "link": "https://github.com/ayoamrit/findit"
     },
     {
-        "category": "frontend",
-        "image": "/Portfolio/assets/images/project-image-4.jpg",
-        "title": "SQL Workbase",
-        "description": "SQLWorkbase, created in Java Swing, allows user to visualize their SQL Server databases and tables in a table view by utilizing JDBC drivers. By entering their SQL Server username and password, users can access all their databases and tables, which are displayed in a JTree Panel.",
-        "techStack": ["Java Swing", "SQL", "JDBC", "Apache POI"],
-        "link": "https://github.com/ayoamrit/SQLWorkbase"
+        "category": "fullstack",
+        "image": "/Portfolio/assets/images/project-image-3.jpg",
+        "title": "Stubber",
+        "description": "Stubber_JavaSwing is a Java Swing-based desktop application designed to quickly generate pay stubs in PDF format using the iText library. It supports automatic population of employee details from saved records, utilizes multithreading for efficient performance, and stores data in text files for easy access and retrieval.",
+        "techStack": ["Java", "Java Swing", "iText", "Multithreading", "File I/O", "PDF", "Text File"],
+        "link": "https://github.com/ayoamrit/Stubber_JavaSwing"
     }
 ]
