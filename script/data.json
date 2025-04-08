@@ -19,7 +19,7 @@
         "category": "fullstack",
         "image": "/Portfolio/assets/images/project-image-3.jpg",
         "title": "Stubber",
-        "description": "Stubber_JavaSwing is a Java Swing-based desktop application designed to quickly generate pay stubs in PDF format using the iText library. It supports automatic population of employee details from saved records, utilizes multithreading for efficient performance, and stores data in text files for easy access and retrieval.",
+        "description": "Stubber is a Java Swing-based desktop application designed to quickly generate pay stubs in PDF format using the iText library. It supports automatic population of employee details from saved records, utilizes multithreading for efficient performance, and stores data in text files for easy access and retrieval.",
         "techStack": ["Java", "Java Swing", "iText", "Multithreading", "File I/O", "PDF", "Text File"],
         "link": "https://github.com/ayoamrit/Stubber_JavaSwing"
     }
